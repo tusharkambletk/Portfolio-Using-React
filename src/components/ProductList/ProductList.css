@@ -1,0 +1,151 @@
+.pl {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pl-text {
+  width: 65%;
+}
+
+.pl-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+.pl-title span {
+  color: #3f5efb;
+}
+
+.pl-desc {
+  margin: 20px 0px;
+}
+
+.pl-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .pl {
+    padding: 10px;
+  }
+  .pl-texts {
+    width: 100%;
+  }
+
+  .pl-title {
+    margin-top: 20vh;
+  }
+  .pl-desc {
+    display: none;
+  }
+
+  .pl-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pl {
+    padding: 10px;
+    margin-top: 18rem;
+  }
+  .pl-texts {
+    width: 100%;
+  }
+}
+
+/* Product Card */
+.p {
+  width: 30%;
+  height: 50vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 30px 40px -20px rgb(189, 185, 185);
+}
+
+.p-title {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.p-browser {
+  height: 40px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.project-title {
+  color: black;
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: rgb(255, 234, 0);
+}
+
+.p-img {
+  width: 100%;
+  transition: all 1s ease;
+}
+.p-img:hover {
+  transform: scale(1.1);
+}
+
+.p-tags {
+  position: absolute;
+  bottom: 0px;
+  color: rgb(104, 104, 240);
+  background-color: rgb(243, 242, 242);
+}
+
+.p-tags p {
+  margin: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 60%;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p {
+    width: 45%;
+    height: 20vh;
+  }
+}

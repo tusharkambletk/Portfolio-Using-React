@@ -1,0 +1,76 @@
+.sm-container {
+  margin: 7rem 0rem;
+}
+.sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sm-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sm-card {
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.sm-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.sm-img {
+  height: 50px;
+  width: 50px;
+  margin: 80px;
+  transition: all 1s ease;
+}
+
+.sm-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-card:hover .sm-img {
+  margin: 30px;
+}
+.sm-card:hover {
+  border-radius: 5px;
+}
+
+.sm-card a {
+  text-decoration: none;
+}
+
+/* images */
+
+.linkedin,
+.facebook {
+  height: 70px;
+  width: 70px;
+  margin: 70px;
+}
+.git {
+  height: 60px;
+  width: 60px;
+  margin: 70px;
+}
